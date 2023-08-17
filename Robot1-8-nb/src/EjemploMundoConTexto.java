@@ -10,7 +10,7 @@ import uni.robot.Robot;
  * <p>
  *
  * El robot realiza un recorrido, y coloca algunos conos.
- * Una pequeña frase de ejemplo con colores en el area de texto.
+ * Una pequea frase de ejemplo con colores en el area de texto.
  * */
 public class EjemploMundoConTexto {
 

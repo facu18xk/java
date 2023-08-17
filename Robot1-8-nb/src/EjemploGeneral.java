@@ -1,7 +1,7 @@
 import uni.robot.*;
 
 /**
- * Ejemplo básico del funcionamiento del robot, conos, y recipientes de conos.
+ * Ejemplo bsico del funcionamiento del robot, conos, y recipientes de conos.
  * <p>
  *
  * Los robots trabajan en conjunto para dibujar las sigla "UNI" en la pantalla.
@@ -9,9 +9,9 @@ import uni.robot.*;
 public class EjemploGeneral {
 
     /**
-     * Método principal de la clase.
+     * Mtodo principal de la clase.
      *
-     * @param arg Argumentos desde la línea de comandos (no necesarios).
+     * @param arg Argumentos desde la lnea de comandos (no necesarios).
      * @throws InterruptedException Excepcion que puede ser lanzada por el Thread.sleep
      */
     public static void main(String[] arg) throws InterruptedException {
@@ -117,7 +117,7 @@ public class EjemploGeneral {
 
     /*
      * Metodo encargado de hacer girar media vuelta al robot.
-     * @param carlitos Robot que dará la media vuelta.
+     * @param carlitos Robot que darï¿½ la media vuelta.
      */
     private static void mediaVuelta(Robot carlitos) {
 
@@ -128,7 +128,7 @@ public class EjemploGeneral {
 
     /*
      * Hace avanzar al robot una cierta cantidad de pasos.
-     * @param carlitos Robot que dará cierta cantidad de pasos.
+     * @param carlitos Robot que darï¿½ cierta cantidad de pasos.
      * @param pasos Cantidad de pasos a avanzar.
      */
     private static void avanzar(Robot carlitos, int pasos) {
@@ -161,7 +161,7 @@ public class EjemploGeneral {
 
     /*
      * Deposita un cono y avanza
-     * @param carlitos Robot que dará cierta cantidad de pasos.
+     * @param carlitos Robot que darï¿½ cierta cantidad de pasos.
      * @param pasos Cantidad de pasos a avanzar.
      **/
     private static void pintar(Robot carlitos, int pasos) {
@@ -175,7 +175,7 @@ public class EjemploGeneral {
 
     /*
      * Gira izquierda y avanza
-     * @param carlitos Es el robot que avanzará
+     * @param carlitos Es el robot que avanzar
      */
     private static void irIzquierda(Robot carlitos) {
 
@@ -186,7 +186,7 @@ public class EjemploGeneral {
 
     /*
      * Gira derecha y avanza
-     * @param carlitos Es el robot que avanzará
+     * @param carlitos Es el robot que avanzarï¿½
      */
     private static void irDerecha(Robot carlitos) {
 
@@ -196,10 +196,10 @@ public class EjemploGeneral {
     }
 
     /**
-     * Método encargado de ejecutar el baile de despedida.
-     * @param carlitos1 Es el robot que bailará.
-     * @param carlitos2 Es el robot que bailará.
-     * @param carlitos3 Es el robot que bailará.
+     * Mï¿½todo encargado de ejecutar el baile de despedida.
+     * @param carlitos1 Es el robot que bailar.
+     * @param carlitos2 Es el robot que bailar.
+     * @param carlitos3 Es el robot que bailar.
      * @throws InterruptedException Excepcion que puede ser lanzada por el Thread.sleep
      */
     private static void baileFinal(Robot carlitos1, Robot carlitos2,
