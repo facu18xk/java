@@ -22,6 +22,6 @@ public class MiPrograma {
         Mundo world = new Mundo("Facu", 46, 46);
         JugadorUno player = new JugadorUno(world, 6, 0, 3, 80, 80);
         /* COLOQUE SUS INSTRUCCIONES AQU� */
-        player.crearBase(2);
+        player.crearTriangulo(4);
     }
 }
