@@ -20,6 +20,8 @@ public class JugadorUno extends Robot {
     }
 
     /**
+     * Metodo para avanzar varios pasos
+     * 
      * @param pasos
      */
     public void avanzarPasos(int pasos) {
@@ -28,6 +30,10 @@ public class JugadorUno extends Robot {
         }
     }
 
+    /**
+     * @param indice
+     * @param par
+     */
     public void ponerConosAvanzar(int indice, boolean par) {
         int residuoModulo;
         if (par) {
@@ -71,8 +77,18 @@ public class JugadorUno extends Robot {
         crearLinea(longitud, false);
     }
 
+    public void posicionInicial() {
+        avanzar();
+        girarIzquierda();
+        avanzar();
+        girarDerecha();
+    }
+
     public void crearTriangulo(int cantidad) {
+        posicionInicial();
         crearBase(cantidad);
         crearPunta(cantidad);
+        avanzar();
+        girarIzquierda();
     }
 }
