@@ -19,11 +19,11 @@ public class MiPrograma {
      * @param args
      */
     public static void main(String[] args) {
-        int cantidadTriangulos = 13;
+        int cantidadTriangulos = 3;
         Mundo world = new Mundo("Facu", 46, 46);
-        JugadorUno player = new JugadorUno(world, 6, 0, 3, 80, 80);
-        player.crearTriangulo(cantidadTriangulos);
-        JugadorDos player2 = new JugadorDos(world, 6, 0, 3, 80, 40);
+        JugadorUno player1 = new JugadorUno(world, 5, 0, 3, 100, 100);
+        player1.crearTriangulos(cantidadTriangulos);
+        JugadorDos player2 = new JugadorDos(world, 5, 0, 3, 100, 0);
         player2.invertirTriangulo(cantidadTriangulos);
     }
 }

@@ -9,50 +9,38 @@ public class JugadorDos extends JugadorUno {
         super(mundo, fila, columna, direccion, capacidadBolsa, cantidadConos);
     }
 
-    public void juntarConos(int cantidad) {
-        cantidad += cantidad + 1;
-        for (int i = 0; i < cantidad; i++) {
+    public void juntarConos(int cantTriangulos) {
+        avanzar();
+        cantTriangulos *= 2;
+        for (int i = 0; i < cantTriangulos; i++) {
+            guardarCono();
+            avanzarDiagonal();
             if (i % 2 == 0) {
-                guardarCono();
-                avanzar();
-            } else {
-                avanzar();
+                rotar180();
             }
         }
-    }
-
-    public void posicionInicial() {
-        super.posicionInicial();
+        guardarCono();
         avanzar();
     }
 
-    public void rotar180() {
-        for (int i = 0; i < 2; i++) {
-            girarDerecha();
-        }
-
+    public void girarEsquinaIzq() {
+        girarDerecha();
+        avanzar();
+        girarDerecha();
     }
 
-    public void posicionSecundaria() {
-        rotarDerecha();
-        girarIzquierda();
-        ponerCono();
+    public void volverPosicionInicial(int cantTriangulos) {
+        int pasos = cantTriangulos * 2;
         rotar180();
-        avanzar();
-        girarIzquierda();
-    }
-
-    public void volverPosInicial() {
-        avanzarPasos(3);
-        girarIzquierda();
+        avanzarPasos(pasos);
+        girarDerecha();
         avanzar();
     }
 
-    public void invertirTriangulo(int cantidadTriangulos) {
-        posicionInicial();
-        juntarConos(cantidadTriangulos);
-        posicionSecundaria();
-        crearPunta(cantidadTriangulos);
-        volverPosInicial();
+    public void invertirTriangulo(int cantTriangulos) {
+        juntarConos(cantTriangulos);
+        girarEsquinaIzq();
+        crearTriangulos(cantTriangulos);
+        volverPosicionInicial(cantTriangulos);
     }
 }
